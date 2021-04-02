@@ -1,0 +1,12 @@
+language: python
+python:
+  - 3.6
+script:
+  - pytest
+
+notifications:
+  email:
+    recipients:
+      - ayaan.abdirizak@ryerson.ca
+    on_success: never
+    on_failure: always
