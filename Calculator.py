@@ -15,3 +15,4 @@ class Calculator:
 if __name__ == "__main__":
     instance = Calculator(1,2)
     print(instance.add())
+
