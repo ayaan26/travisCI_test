@@ -1,12 +1,11 @@
 language: python
 python:
   - 3.6
+install:
+  - pip install codecov
+  - pop install coverage
 script:
-  - pytest
-
-notifications:
-  email:
-    recipients:
-      - ayaan.abdirizak@ryerson.ca
-    on_success: never
-    on_failure: always
+  - python -m unittest discover -v ./ci_play/
+  - coverage run ./ci_play/test.py
+after_success:
+  - codecov --token=449f263b-7646-4f38-bb86-a79b7fee433c
