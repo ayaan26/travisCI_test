@@ -1,5 +1,5 @@
 import unittest
-from ci_play import myfunc
+import myfunc
 
 class TestMyFunc(unittest.TestCase):
  
